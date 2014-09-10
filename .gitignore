@@ -1,0 +1,8 @@
+/.idea
+/download
+/temporary
+/public/download/*
+/vendor
+composer
+composer.lock
+.htaccess

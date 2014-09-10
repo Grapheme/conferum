@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Conv_HeliosCondLightC';
+	src: url('../fonts/HeliosCondLightC.eot');
+	src: local('☺'), url('../fonts/HeliosCondLightC.woff') format('woff'), url('../fonts/HeliosCondLightC.ttf') format('truetype'), url('../fonts/HeliosCondLightC.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
