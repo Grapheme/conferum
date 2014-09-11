@@ -23,9 +23,9 @@
 		</div>
 		<div class="contact-call-link">			
 		 	<div class="contact-icon contact-icon-fb"></div>
-		 	<a class="no-clickable" href="#">Facebook</a>
+		 	<a target="_blank" href="https://www.facebook.com/pages/%D0%9A%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D1%83%D0%BC-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BC%D0%BE%D1%8E%D1%89%D0%B8%D1%85-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2/420363638105001">Facebook</a>
 		 	<div class="contact-icon contact-icon-vk"></div>
-		 	<a class="no-clickable" href="#">Вконтакте</a>
+		 	<a target="_blank" href="http://vk.com/konferum">Вконтакте</a>
 		</div>
 	</div>
 	<div class="description">
