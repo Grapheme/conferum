@@ -7,7 +7,7 @@ if(!isset($page_content['page_keywords'])):
     $page_content['page_keywords'] = '';
 endif;
 ?>
-<meta name="keywords" content="<?=$page_content['page_keywords']);?>">
+<meta name="keywords" content="<?=$page_content['page_keywords'];?>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name = "format-detection" content = "telephone=no" />
 <link rel="stylesheet" href="<?=base_url('css/bootstrap.css');?>" />
