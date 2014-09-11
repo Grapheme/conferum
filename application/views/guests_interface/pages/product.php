@@ -50,7 +50,10 @@
 							</div>
 							<div class="cat-item-desc">
 								<h1 class="cat-item-name"><?=(!empty($product['page_h1']))?$product['page_h1']:$product['title'];?></h1>
-								<div class="cat-item-purpose">
+                                <div class="cat-item-purpose">
+                                    <?=$product['price']?>
+                                </div>
+                                <div class="cat-item-purpose">
 									<?=$product['destination']?>
 								</div>
 								<div class="">
