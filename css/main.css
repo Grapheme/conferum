@@ -318,6 +318,8 @@ header { position: relative; height: 122px; margin: 0; }
     .event-short-info.search-goods-it > a, .nothing-found > a { margin: 0; }
 	.contact-call-link .contact-icon { float: left; width: 1.65em; height: 1.65em; }
 	.contact-call-link .contact-icon-call { background: url("../img/icons_sprite.png") no-repeat scroll 0 0 transparent; /*background-size: 100% 200%; -webkit-background-size: 200% 100%; -moz-background-size: 200% 100%; -o-background-size: 200% 100%;*/ }
+	.contact-call-link .contact-icon-fb { background: url("../img/icons_sprite.png") no-repeat scroll 0 -46px transparent; display: inline-block; float: none; position: relative; top: 7px; }
+	.contact-call-link .contact-icon-vk { background: url("../img/icons_sprite.png") no-repeat scroll 0 -69px transparent; margin: 0 0 0 4px; display: inline-block; float: none; position: relative; top: 8px; left: 2px; }
 	.contact-call-link .contact-icon-cons { background: url(../img/icons_sprite.png) no-repeat 0 -23px transparent; /*background-size: 100% 200%; -webkit-background-size: 200% 100%; -moz-background-size: 200% 100%; -o-background-size: 200% 100%;*/ }
 	.contact-call-link a:hover, .event-short-info.search-goods-it > a:hover, .nothing-found > a:hover { border-bottom: 1px solid transparent; }
 	.summon-call-form a { border-bottom: 1px dashed #2671A0; }
