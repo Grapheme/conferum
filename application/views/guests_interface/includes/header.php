@@ -21,6 +21,12 @@
 		 	<div class="contact-icon contact-icon-call"></div>
 			<a href="<?=site_url('consultation');?>">Консультация специалиста</a>
 		</div>
+		<div class="contact-call-link">			
+		 	<div class="contact-icon contact-icon-fb"></div>
+		 	<a class="no-clickable" href="#">Facebook</a>
+		 	<div class="contact-icon contact-icon-vk"></div>
+		 	<a class="no-clickable" href="#">Вконтакте</a>
+		</div>
 	</div>
 	<div class="description">
 		<h2>
