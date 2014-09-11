@@ -241,6 +241,7 @@
 					</ul>
 				</section>
 			<?php endif;?>
+			
 		</div>
 	</div>
 	<?php $this->load->view('guests_interface/forms/order-call');?>
