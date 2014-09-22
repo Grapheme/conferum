@@ -319,7 +319,7 @@ header { position: relative; height: 122px; margin: 0; }
 	.contact-call-link .contact-icon { float: left; width: 1.65em; height: 1.65em; }
 	.contact-call-link .contact-icon-call { background: url("../img/icons_sprite.png") no-repeat scroll 0 0 transparent; /*background-size: 100% 200%; -webkit-background-size: 200% 100%; -moz-background-size: 200% 100%; -o-background-size: 200% 100%;*/ }
 	.contact-call-link .contact-icon-fb { background: url("../img/icons_sprite.png") no-repeat scroll 0 -46px transparent; display: inline-block; float: none; position: relative; top: 7px; }
-	.contact-call-link .contact-icon-vk { background: url("../img/icons_sprite.png") no-repeat scroll 0 -69px transparent; margin: 0 0 0 4px; display: inline-block; float: none; position: relative; top: 8px; left: 2px; }
+	.contact-call-link .contact-icon-vk { background: url("../img/icons_sprite.png") no-repeat scroll 0 -69px transparent; margin: 0 0 0 3px; display: inline-block; float: none; position: relative; top: 7px; left: 3px; }
 	.contact-call-link .contact-icon-cons { background: url(../img/icons_sprite.png) no-repeat 0 -23px transparent; /*background-size: 100% 200%; -webkit-background-size: 200% 100%; -moz-background-size: 200% 100%; -o-background-size: 200% 100%;*/ }
 	.contact-call-link a:hover, .event-short-info.search-goods-it > a:hover, .nothing-found > a:hover { border-bottom: 1px solid transparent; }
 	.summon-call-form a { border-bottom: 1px dashed #2671A0; }
@@ -440,6 +440,8 @@ header { position: relative; height: 122px; margin: 0; }
    .outer-wrapper section.find-goods,
    .outer-wrapper section.reviews { min-height: 15em; }
    .outer-wrapper section.science-base { min-height: 15.5em; }   
+   
+   .yashare-auto-init { float: right; z-index: 9999; position: relative; }
    
    /*section { margin-bottom: 2.8em; }   */
    section header,
@@ -562,7 +564,7 @@ header { position: relative; height: 122px; margin: 0; }
    .cat-item-pict img { max-width: 100%; max-height: 100%; }
    .cat-item-name { margin: 0 0 .35em; font-size: 1.85em; color: #2671a0; text-transform: uppercase; font-weight: 600; }
    .cat-item-info { margin: 0 0 1em 13.625em; }
-   .cat-item-desc { margin: 0 0 3em 15em; font-size: .875em; text-align: left; }
+   .cat-item-desc { margin: 0 0 1em 15em; font-size: .875em; text-align: left; }
    .cat-item-desc .add-to-cart-btn { margin: 1em 0; }
    .cat-item-value-span { display: block; color: #4b4b4b; }
    .cat-item-taglinks { margin: 1em 0; }

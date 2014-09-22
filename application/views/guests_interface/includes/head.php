@@ -10,6 +10,14 @@ if(!isset($page_content['page_keywords'])) $page_content['page_keywords'] = '';
 <meta name="keywords" content="<?=$page_content['page_keywords'];?>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name = "format-detection" content = "telephone=no" />
+
+<!-- Open Graph Meta Data -->
+<meta property="og:description" content="<?=$page_content['page_description'];?>">
+<meta property="og:site_name" content="Конферум"/>
+<meta property="og:title" content="<?=$page_content['page_title'];?>"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>"/>
+
 <link rel="stylesheet" href="<?=base_url('css/bootstrap.css');?>" />
 <link rel="stylesheet" href="<?=base_url('css/normalize.css');?>" />
 <link rel="shortcut icon" href="<?=base_url('favicon.ico');?>" />

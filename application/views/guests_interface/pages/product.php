@@ -68,6 +68,11 @@
 									<a href="#"><?=$keywords[$i]?></a><?php if(isset($keywords[$i+1])):?>,<?php endif;?>
 								<?php endfor;?>
 								</div>
+								<!-- Yandex.Share buttons -->
+								<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,gplus"> </div>
+								<div class="clear"> </div>
+								<!-- /Yandex.Share buttons -->
 								<?php $this->load->view("guests_interface/forms/order",array('tara'=>$product_tara,'sizes'=>$product_sizes,'productID'=>$product['id'],'categoryID'=>$product['category']))?>
 							</div>
 							<div id="tab">
