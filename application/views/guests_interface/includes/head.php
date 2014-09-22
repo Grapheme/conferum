@@ -1,12 +1,12 @@
+<?php
+if(!isset($page_content['page_title'])) $page_content['page_title'] = '';
+if(!isset($page_content['page_description'])) $page_content['page_description'] = '';
+if(!isset($page_content['page_keywords'])) $page_content['page_keywords'] = '';
+?>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title><?=$page_content['page_title'];?></title>
 <meta name="description" content="<?=$page_content['page_description'];?>" />
-<?php
-if(!isset($page_content['page_keywords'])):
-    $page_content['page_keywords'] = '';
-endif;
-?>
 <meta name="keywords" content="<?=$page_content['page_keywords'];?>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name = "format-detection" content = "telephone=no" />
