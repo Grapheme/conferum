@@ -23,7 +23,7 @@
 			<div class="outer-wrapper top reviews">
 				<section class="reviews clearfix">
 					<header>
-						<h1>Отзывы</h1>
+						<h1>Преобразователь ржавчины отзывы, смывка<br>старой краски отзывы, моющие средства отзывы</h1>
 					</header>
 					<?=$page_content['content'];?>
 				</section>
