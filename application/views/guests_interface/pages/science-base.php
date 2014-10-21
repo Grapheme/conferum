@@ -23,7 +23,7 @@
 			<div class="outer-wrapper top science-base">
 				<section class="science-base clearfix">
 					<header>
-						<h1>Научная база</h1>
+						<h1>Научная база завода по производству моющих средств,<br>смывки краски и преобразователя ржавчины</h1>
 					</header>
 					<?=$page_content['content'];?>
 				</section>
