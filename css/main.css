@@ -526,7 +526,7 @@ header { position: relative; height: 122px; margin: 0; }
    .resp-tabs-container header { margin: 1.5em 0 2em; } 
    .production h3 { margin: 0 0 2em .8em; }
    .production-list { margin: 0; padding: 0 0 0 1.5em; list-style-type: none; }	
-   .production-list-item { float: left; position: relative; max-width: 155px; height: 360px; margin: 13px; padding: 1em; outline:1px solid #dfdfdf; border: 3px solid transparent; border-radius: 2px; text-align: left; background: #F8F8F8; } 
+   .production-list-item { float: left; position: relative; max-width: 155px; height: 402px; margin: 13px; padding: 1em; outline:1px solid #dfdfdf; border: 3px solid transparent; border-radius: 2px; text-align: left; background: #F8F8F8; } 
    .production-list-item .production-item-block a img { max-width: 100%; }
    .production-list-item:hover { /*margin: 10px;*/ outline: 0px solid #60c1a4; border: 3px solid #60c1a4;  }     
    .production-list-item .quantity-input { margin: .2em 0 .4em; }
@@ -543,7 +543,7 @@ header { position: relative; height: 122px; margin: 0; }
    .potion-avatar img { max-width: 100%; border-radius: 200px; }
    .order-a-potion { width: 40%; max-width: 614px; margin: 0 0 0 224px; padding: 1em 1em 1em 3em; } 
    .order-a-potion .add-to-cart-btn { margin: 4em 0 0; }
-   .order-an-item.form-set-order { position: relative; min-height: 70px; }
+   .order-an-item.form-set-order { position: absolute; bottom: -3px; min-height: 43px; }
  
 /* ==========================================================================
    Catalog-item styles
@@ -928,6 +928,28 @@ header { position: relative; height: 122px; margin: 0; }
     appearance:none;
     cursor:pointer;
     }
+
+#tab div .production-list-item {
+	margin: 10px;
+	padding: 1em !important;
+}
+
+#tab div .production-list-item a {
+	border: none !important;
+}
+
+#tab div .production-list-item .production-item-header a {
+	color: #494949 !important;
+    font-weight: 700;
+    height: auto;
+    margin: 0 0 1em;
+    text-decoration: none;
+}
+
+#tab div .production-list-item .production-item-desc {
+	font-size: 12px !important;
+    margin: 0 0 1em !important;
+}
     
 .inner-banner {
 	margin: 1.5em auto 25px auto;
