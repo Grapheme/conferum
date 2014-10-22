@@ -361,6 +361,8 @@ header { position: relative; height: 122px; margin: 0; }
 	.cats-list-item .item-9:hover, .cats-list-item .item-9.active { background-position: center -133px; }
 	.cats-list-item .item-10 { background: url(../img/cat_sprites/10.png) no-repeat center -133px; opacity: 0.85; }
 	.cats-list-item .item-10:hover, .cats-list-item .item-9.active { opacity: 1; }
+	.cats-list-item .item-11 { background: url(../img/cat_sprites/11.png) no-repeat center center; opacity: .85; }
+	.cats-list-item .item-11:hover { opacity: 1; }
 
 	.cats-list-item:hover h3 { color: #2671a0; cursor: pointer; }
 	
