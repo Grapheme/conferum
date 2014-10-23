@@ -25,9 +25,11 @@
 					<?=$products;?>
 					<?=$pages;?>
 				</div>
+                <?php if($this->uri->uri_string == 'catalog'): ?>
                 <div class="catalog-container">
                     <?=$page_content['content'];?>
                 </div>
+                <?php endif; ?>
 			</div>
 			<div class="outer-wrapper bottom">
 				<section class="find-potion clearfix">
