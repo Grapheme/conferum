@@ -26,6 +26,9 @@
 					<?=$pages;?>
 				</div>
 			</div>
+            <div class="catalog-container">
+                <?=$page_content['content'];?>
+            </div>
 			<div class="outer-wrapper bottom">
 				<section class="find-potion clearfix">
 					<header>
@@ -37,9 +40,15 @@
 					<?php endfor;?>
 					</div>
 					<div class="order-a-potion">
-						<div class="order-desc">
-							<?=$page_content['content'];?>
-						</div>
+                        <div class="order-desc">
+                            <p>
+	                            Если же вас интересуют специализированные моющие средства, компания готова изготовить их для
+                                вас по вашему техническому заданию.
+                            </p>
+                            <p>
+                                Сделать заказ, подобрать необходимое моющее средство или узнать цены вы можете по телефону
+                            </p>
+                        </div>
 						<button class="add-to-cart-btn">Заказать средство</button>
 					</div>
 				</section>
