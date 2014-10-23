@@ -25,10 +25,10 @@
 					<?=$products;?>
 					<?=$pages;?>
 				</div>
+                <div class="catalog-container">
+                    <?=$page_content['content'];?>
+                </div>
 			</div>
-            <div class="catalog-container">
-                <?=$page_content['content'];?>
-            </div>
 			<div class="outer-wrapper bottom">
 				<section class="find-potion clearfix">
 					<header>
