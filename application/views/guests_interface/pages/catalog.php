@@ -26,7 +26,7 @@
 					<?=$pages;?>
 				</div>
 			</div>
-            <div class="catalog-container">
+            <div class="consultation-text">
                 <?=$page_content['content'];?>
             </div>
 			<div class="outer-wrapper bottom">
