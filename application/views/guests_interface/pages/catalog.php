@@ -31,32 +31,33 @@
                 </div>
                 <?php endif; ?>
 			</div>
-			<div class="outer-wrapper bottom">
-				<section class="find-potion clearfix">
-					<header>
-						<h3>Не нашли средство?</h3>
-					</header>
-					<div class="potion-avatar">
-					<?php for($i=0;$i<count($images);$i++):?>
-						<img src="<?=base_url($images[$i]['resource'])?>" alt="<?=$images[$i]['caption']?>" >
-					<?php endfor;?>
-					</div>
-					<div class="order-a-potion">
-                        <noindex>
-                            <div class="order-desc">
-                                <p>
-                                    Если же вас интересуют специализированные моющие средства, компания готова изготовить их для
-                                    вас по вашему техническому заданию.
-                                </p>
-                                <p>
-                                    Сделать заказ, подобрать необходимое моющее средство или узнать цены вы можете по телефону
-                                </p>
-                            </div>
-                            <button class="add-to-cart-btn">Заказать средство</button>
-                        </noindex>
-					</div>
-				</section>
-			</div>
+            <noindex>
+                <div class="outer-wrapper bottom">
+                    <section class="find-potion clearfix">
+                        <header>
+                            <h3>Не нашли средство?</h3>
+                        </header>
+                        <div class="potion-avatar">
+                        <?php for($i=0;$i<count($images);$i++):?>
+                            <img src="<?=base_url($images[$i]['resource'])?>" alt="<?=$images[$i]['caption']?>" >
+                        <?php endfor;?>
+                        </div>
+                        <div class="order-a-potion">
+                                <div class="order-desc">
+                                    <p>
+                                        Если же вас интересуют специализированные моющие средства, компания готова изготовить их для
+                                        вас по вашему техническому заданию.
+                                    </p>
+                                    <p>
+                                        Сделать заказ, подобрать необходимое моющее средство или узнать цены вы можете по телефону
+                                    </p>
+                                </div>
+                                <button class="add-to-cart-btn">Заказать средство</button>
+
+                        </div>
+                    </section>
+                </div>
+            </noindex>
 		</div>
 	</div>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
