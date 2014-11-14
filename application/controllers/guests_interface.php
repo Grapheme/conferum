@@ -375,6 +375,8 @@ class Guests_interface extends MY_Controller{
 				$pagevar['pages'] = $this->pagination('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),$this->offset);
 
 				$pagevar['category'] = $category;
+            else:
+                show_404();
 			endif;
 		endif;
 		$pagevar = $this->getMenu($pagevar);
