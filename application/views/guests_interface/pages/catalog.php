@@ -22,7 +22,7 @@
 				<?php $this->load->view('guests_interface/includes/categories');?>
 				<?php $this->load->view('guests_interface/includes/sub-categories');?>
 				<div id="catalog-products">
-					<?=$products;?>
+					
 					<?=$pages;?>
 				</div>
                 <?php if($this->uri->uri_string == 'catalog'): ?>

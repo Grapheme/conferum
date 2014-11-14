@@ -293,7 +293,8 @@ html, body { margin: 0; padding: 0; font-size: 100%; font-family: "pt-sans", san
 		-webkit-box-shadow: 10px 0 8px -6px #ccc , -10px 0 8px -6px #ccc;
 	  }
 .main-container { padding: 0 38px; }
-p { font-size: 14px; font-family: "proxima-nova", sans-serif; }
+p, li { font-size: 14px; font-family: "proxima-nova", sans-serif; }
+ul { margin: 0; }
 .wrapper { margin: 0 auto; overflow: hidden; min-height: 100%; }
 #map-canvas { width: 100%; height: 100%; }
 .upperline { position: relative; height: 9px; background-color: #5464a7; border-bottom: 1px solid #7683b9; margin: 0 0 1.5em; }
@@ -486,7 +487,8 @@ header { position: relative; height: 122px; margin: 0; }
    .about-container.text-left h4,
    .about-container.text-left h5,
    .about-container.text-left h6 { margin-left: 0; }
-   h2 { margin: 1em 0 .5em .8em; color: #2671A0; text-transform: uppercase; font-size: 1.47em; }
+   h1 { font-size: 2em; margin: 1em 0 0.67em; color: #2671A0; line-height: 1.2em; max-width: 26em; }
+   h2 { margin: 1em 0 .5em 0em; color: #2671A0; text-transform: uppercase; font-size: 1.47em; max-width: 36em; }
    h3, h4 { margin: 1em 0 .5em .8em; color: #2671A0; text-transform: uppercase; font-size: 1.37em; }
    h5, h6 { margin: 1em 0 .5em .8em; color: #2671A0; text-transform: uppercase; font-size: 1.17em; }
    
@@ -544,6 +546,14 @@ header { position: relative; height: 122px; margin: 0; }
    .order-a-potion { width: 40%; max-width: 614px; margin: 0 0 0 224px; padding: 1em 1em 1em 3em; } 
    .order-a-potion .add-to-cart-btn { margin: 4em 0 0; }
    .order-an-item.form-set-order { position: absolute; bottom: -3px; min-height: 43px; }
+   .catalog-container p, .tpl p {
+   		-moz-column-count: 2;
+       	-moz-column-gap: 30px;
+       	-webkit-column-count: 2;
+       	-webkit-column-gap: 30px;
+   }
+   .tpl li { max-width: 48em; color: #666; margin-bottom: 0.35em; }
+   .tpl h2 { font-weight: 600; font-size: 21px; margin: 1.2em 0 0.6em; }
  
 /* ==========================================================================
    Catalog-item styles
@@ -738,6 +748,8 @@ header { position: relative; height: 122px; margin: 0; }
   .resp-tabs-container h4 { font-size: 1.2em; color: #2671A0; margin: 1em 0 0.5em; text-transform: none; font-weight: 400; }
   .resp-tabs-container h3 { text-transform: none; }
   .resp-tabs-container h4 { text-transform: none; }
+  p a { color: inherit; text-decoration: none; text-transform: lowercase; line-height: 0.9em; border-bottom: 1px solid rgba(0,0,0,0.1); }
+  p a:hover { color: #888; border-bottom-color: transparent; } 
   
 /* ==========================================================================
    Contacts-page
