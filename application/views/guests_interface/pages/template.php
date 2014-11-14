@@ -21,7 +21,7 @@
 				<?php $this->load->view('guests_interface/includes/small-menu');?>
 				<?php $this->load->view('guests_interface/includes/header');?>
 				<?php $this->load->view('guests_interface/includes/navigation');?>
-				<section class="honors">
+				<section class="tpl">
 					<header>
 						<div class="header_bg">
 							<h1><?=$page_content['title'];?></h1>
