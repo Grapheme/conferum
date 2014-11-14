@@ -1,6 +1,6 @@
 <section class="production list clearfix">
 	<header>
-		<h1 id="top" class="products-header"><?=$categoryTitle;?></h1>
+		<h1 id="top" class="products-header"><?=@$page_content['page_h1'];?></h1>
 	</header>
 <?php if(uri_string() != 'catalog'):?>
 	<div id="category-description">
