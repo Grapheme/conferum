@@ -365,14 +365,15 @@ class Guests_interface extends MY_Controller{
 						$products[$i]['tara'] = $this->getProductTara($products[$i]['sizes']);
 					endfor;
 				endif;
-				$pagevar['sub_categories'] = $this->categories->getWhere(NULL,array('sub_category'=>1,'parent'=>$category['id']),TRUE);
+                $pagevar['page_content']['page_title'] = $category['page_title'];
+                $pagevar['page_content']['page_description'] = $category['page_description'];
+                $pagevar['page_content']['page_h1'] = $category['page_h1'];
+                $pagevar['page_content']['page_url'] = $category['page_url'];
+                $pagevar['sub_categories'] = $this->categories->getWhere(NULL,array('sub_category'=>1,'parent'=>$category['id']),TRUE);
 				$categoryImg = $this->categories->value($category['id'],'image');
 				$pagevar['products'] = $this->load->view('html/catalog-products',array('page_content'=>$pagevar['page_content'],'products'=>$products,'categoryTitle'=>$category['title'],'categoryDescription'=>$category['description'],'categoryImg'=>$categoryImg),TRUE);
 				$pagevar['pages'] = $this->pagination('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),$this->offset);
-				$pagevar['page_content']['page_title'] = $category['page_title'];
-				$pagevar['page_content']['page_description'] = $category['page_description'];
-				$pagevar['page_content']['page_h1'] = $category['page_h1'];
-				$pagevar['page_content']['page_url'] = $category['page_url'];
+
 				$pagevar['category'] = $category;
 			endif;
 		endif;
