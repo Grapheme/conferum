@@ -1,5 +1,5 @@
 /.idea
-/download
+#/download
 /temporary
 /public/download/*
 /vendor
