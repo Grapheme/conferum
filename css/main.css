@@ -748,7 +748,7 @@ header { position: relative; height: 122px; margin: 0; }
   .resp-tabs-container h4 { font-size: 1.2em; color: #2671A0; margin: 1em 0 0.5em; text-transform: none; font-weight: 400; }
   .resp-tabs-container h3 { text-transform: none; }
   .resp-tabs-container h4 { text-transform: none; }
-  p a { color: inherit; text-decoration: none; text-transform: lowercase; line-height: 0.9em; border-bottom: 1px solid rgba(0,0,0,0.1); }
+  p a { color: inherit; text-decoration: none; line-height: 0.9em; border-bottom: 1px solid rgba(0,0,0,0.3); }
   p a:hover { color: #888; border-bottom-color: transparent; } 
   
 /* ==========================================================================
