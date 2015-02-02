@@ -405,15 +405,15 @@ header { position: relative; height: 122px; margin: 0; }
   
 	html, body, .main { height: 100%; }
 	body > .main { height: auto; /*min-height: 100%;*/ }
-	.main { padding-bottom: 170px; }  /* отступ должен быть равен высоте футера */
+	.main { padding-bottom: 220px; }  /* отступ должен быть равен высоте футера */
 	footer { 
 	position: relative;
 	border-top: 1px solid #DCDCDC;
     clear: both;
     color: #979797;
     font: 0.8em/1.45em 'pt-sans',sans-serif;
-    height: 126px;
-    margin: -170px auto 0 auto;
+    height: 176px;
+    margin: -220px auto 0 auto;
     padding: 36px 0 0;    
     text-align: center;
     max-width: 1000px; 

@@ -11,6 +11,7 @@
 <script src="//use.typekit.net/fmd7hfe.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 	(function (d, w, c) {

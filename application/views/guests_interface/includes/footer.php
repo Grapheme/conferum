@@ -35,6 +35,10 @@
 			target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/678997/3_1_76DCBFFF_56BC9FFF_1_pageviews"
 			style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:678997,lang:'ru'});return false}catch(e){}"/></a>
 			<!-- /Yandex.Metrika informer -->
+			<script type="text/javascript" src="<?=base_url('js/vendor/orphus.js');?>"></script>
+			<a href="http://orphus.ru" id="orphus" target="_blank">
+				<img alt="Система Orphus" src="<?=base_url('js/vendor/orphus.png');?>" border="0" width="183" height="33" style="margin-left: 1.6em;" />
+			</a>
 		</div>
 	</div>
 </footer> 
