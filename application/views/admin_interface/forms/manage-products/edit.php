@@ -57,6 +57,8 @@
 		<textarea class="redactor" rows="5" name="advantages"><?=$product['advantages'];?></textarea>
 		<label>Применение:</label>
 		<textarea class="redactor" rows="5" name="applying"><?=$product['applying'];?></textarea>
+        <label>Услуги:</label>
+        <textarea class="redactor" rows="5" name="services"><?=$product['services'];?></textarea>
 	</div>
 	<hr/>
 	<div class="controls">
