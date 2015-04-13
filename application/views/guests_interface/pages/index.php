@@ -21,8 +21,8 @@
 				<?php $this->load->view('guests_interface/includes/header');?>
 				<?php $this->load->view('guests_interface/includes/navigation');?>
 				<div class="fotorama_container" style="height: 400px;">
-					<iframe width="924" height="400" src="https://www.youtube.com/embed/L9XyGTDMhIU" frameborder="0" allowfullscreen></iframe>
-					<!-- <div class="fotorama" data-width="100%" data-nav="false" data-autoplay="6000">
+					<!--  <iframe width="924" height="400" src="https://www.youtube.com/embed/L9XyGTDMhIU" frameborder="0" allowfullscreen></iframe> -->
+					<div class="fotorama" data-width="100%" data-nav="false" data-autoplay="6000">
 					<?php for($i=0;$i<count($banners);$i++):?>
 						<div class="fotorama-div" data-img="<?=base_url($banners[$i]['resource'])?>">
 						<?php if(!empty($banners[$i]['product'])):?>
@@ -30,8 +30,8 @@
 						<?php endif;?>
 						</div>
 					<?php endfor;?>
-					</div> -->
-					<div>Смотрите также: <a href="http://www.youtube.com/watch?v=ERKjzzOxPs8" target="_blank">Супер смывка краски с автомобильного диска - Фэйл-45</a></div>
+					</div>
+					<!-- <div>Смотрите также: <a href="http://www.youtube.com/watch?v=ERKjzzOxPs8" target="_blank">Супер смывка краски с автомобильного диска - Фэйл-45</a></div> -->
 				</div>
 				<?php $this->load->view('guests_interface/includes/categories');?>
 			</div>
