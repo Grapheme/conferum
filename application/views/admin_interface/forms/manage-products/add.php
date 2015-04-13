@@ -55,6 +55,8 @@
 		<textarea class="redactor" rows="5" name="advantages"></textarea>
 		<label>Применение:</label>
 		<textarea class="redactor" rows="5" name="applying"></textarea>
+        <label>Услуги:</label>
+		<textarea class="redactor" rows="5" name="services"></textarea>
 	</div>
 	<hr/>
 	<div class="controls">

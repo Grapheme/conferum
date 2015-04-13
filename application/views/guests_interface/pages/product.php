@@ -90,6 +90,9 @@
 									<li>До и после</li>
 								<?php endif;?>
 									<li>Как купить?</li>
+                                <?php if(!empty($product['services'])):?>
+                                    <li>Услуги</li>
+                                <?php endif;?>
 								</ul>
 								<div class="resp-tabs-container">
 								<?php if(!empty($product['description'])):?>
@@ -209,6 +212,9 @@
 											</tr>
 										</table>
 									</div>
+                                <?php if(!empty($product['services'])):?>
+                                    <div><?=$product['services'];?></div>
+                                <?php endif;?>
 								</div>
 							</div>
 						</div>
