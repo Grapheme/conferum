@@ -16,7 +16,7 @@
 				featureType: 'landscape',
 				elementType: 'all',
 				stylers: [
-					{ hue: '#97d7c4' },
+					{ hue: '#6473b3' },
 					{ saturation: 24 },
 					{ lightness: -19 },
 					{ visibility: 'on' }
@@ -162,7 +162,7 @@
 			position : myLatLng13,
 			map : map,
 			icon : image,
-			title : 'Ярославль'
+			title : 'Ярославль'
 		});
 		
 		var content14 = '<div id="infoWindow">г. Кострома ул. Мясницкая, д. 112 «Ж» +7 (903) 896-07-30</div>';

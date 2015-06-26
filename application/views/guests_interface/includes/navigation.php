@@ -1,4 +1,4 @@
-<nav>
+<nav class="holder-nav-list">
 	<ul class="nav-list">
 	<?php for($i=0;$i<count($main_menu);$i++):?>
 		<?php $li = '<li class="nav-list-item';

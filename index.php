@@ -1,6 +1,7 @@
 <?php
 
 switch ($_SERVER['HTTP_HOST']):
+	case 'conferum.dev': define('ENVIRONMENT', 'development'); break;
 	case 'conferum': define('ENVIRONMENT', 'development'); break;
 	case 'conferum.ru': define('ENVIRONMENT', 'production');  break;
 	default: define('ENVIRONMENT', 'production');

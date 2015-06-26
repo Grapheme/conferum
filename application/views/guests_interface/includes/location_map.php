@@ -19,7 +19,7 @@
 				featureType: 'landscape',
 				elementType: 'all',
 				stylers: [
-					{ hue: '#97d7c4' },
+					{ hue: '#6473b3' },
 					{ saturation: 24 },
 					{ lightness: -19 },
 					{ visibility: 'on' }
