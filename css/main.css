@@ -982,8 +982,32 @@ header { position: relative; height: 122px; margin: 0; }
   .work-form input.error-input { border-color: #f45b5b; }
   .work-form textarea { display: block; width: 26.7em; height: 10em; border: 1px solid #979797; margin: 0 0 .5em; }
   .input-fieldset { margin: 1em 0 0; }
-  .work-form input[type="submit"] { display:block; margin: 1em 0; padding: .2em 1em .2em; border: 1px solid #0f9e74; border-radius: 2px; background: url("../img/button_grad.png") repeat-x #5BBFA1; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; color: #FFFFFF; font: 16px/1.4em 'proxima-nova',sans-serif; text-shadow: 1px 1px 0 #53AC92; color: #fff; text-shadow: 1px 1px 0px #53ac92; filter: dropshadow(color=#53ac92, offx=1, offy=1); font: 16px/1.4em 'proxima-nova',sans-serif; }
-  .work-form input[type="submit"]:hover { background-image: url(../img/button_grad_hover.png); }
+  .work-form input[type="submit"] { 
+    display:block; 
+    margin: 1em 0; 
+    padding: .2em 1em .2em; 
+    border: 1px solid #0f9e74; 
+    border-radius: 2px; 
+    background: url("../img/button_grad.png") repeat-x #5BBFA1; 
+    background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    color: #FFFFFF; 
+    font: 16px/1.4em 'proxima-nova',sans-serif; 
+    /*text-shadow: 1px 1px 0 #53AC92; */
+    color: #fff; 
+    /*text-shadow: 1px 1px 0px #53ac92; 
+    filter: dropshadow(color=#53ac92, offx=1, offy=1); */
+    font: 16px/1.4em 'proxima-nova',sans-serif; 
+    border: 1px solid #2d3977;
+    border-bottom: 3px solid #2d3977;
+    background: #3b4a8f;
+  }
+  .work-form input[type="submit"]:hover { 
+    /*background-image: url(../img/button_grad_hover.png); */
+    background: rgb(69, 88, 177);
+  }
   .input-file-button { display: inline-block; padding: 0.15em 14.8em 0.18em 0.8em; border: 1px solid #979797; color: #4B4B4B; font-size: 0.875em; }
   .error { font-size: .875em; }
   
