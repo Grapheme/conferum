@@ -1019,8 +1019,27 @@ header { position: relative; height: 122px; margin: 0; }
   .nothing-found { margin: 3em 0; text-align: center; color: #444; }
   .nothing-found > div { margin: 3em 0; } 
   .search-form input[type="text"] { width: 20em; height: 1.8em; padding: 0 0 0 0.5em; } 
-  .search-form input[type="submit"] { display:inline-block; margin: 0 0 0 .2em; padding: 5px 1em; border: 1px solid #0f9e74; border-radius: 2px; background: url("../img/button_grad.png") repeat-x scroll 0 0 #5bbfa1; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; color: #fff; text-shadow: 1px 1px 0px #53ac92; filter: dropshadow(color=#53ac92, offx=1, offy=1); }
-  .search-form input[type="submit"]:hover { background: url("../img/button_grad_hover.png"); background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; }
+  .search-form input[type="submit"] { 
+    display:inline-block; 
+    margin: 0 0 0 .2em; 
+    padding: 5px 1em; 
+    border: 1px solid #2d3977;
+    border-bottom: 3px solid #2d3977;
+    border-radius: 3px;
+    background: #3b4a8f;
+    /*background: url("../img/button_grad.png") repeat-x scroll 0 0 #5bbfa1;*/
+    background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    color: #fff; 
+    /*text-shadow: 1px 1px 0px #53ac92; 
+    filter: dropshadow(color=#53ac92, offx=1, offy=1); */
+  }
+  .search-form input[type="submit"]:hover { 
+    /*background: url("../img/button_grad_hover.png"); */
+    background: rgb(69, 88, 177);
+    background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; }
   .search-results { margin: 2.8em 0 0; }
   .search-results .typical-event-list .event-avatar img { border: 1px solid #e1e1e1; border-radius: 3px; padding: 1em .5em; }
   .search-results .typical-event-list .event-desc { margin: 0 10em 0 8em; }
