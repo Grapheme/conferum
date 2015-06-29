@@ -628,7 +628,7 @@ header { position: relative; height: 122px; margin: 0; }
    .outer-wrapper { background: #f8f8f8; padding: 0 50px; }
    .outer-wrapper.top { margin: 1.5em 0 0; }
    .outer-wrapper.top.search-goods-wr { background: url(../img/search_goods.jpg) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%;}
-   .outer-wrapper.top.science-base { border-top: 1px solid #539f89; border-bottom: 1px solid #539f89; background: url(../img/scientist.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; }
+   .outer-wrapper.top.science-base { border-top: 1px solid #539f89; border-bottom: 1px solid #539f89; background: url(../img/scientist_new.jpg) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; }
    .outer-wrapper.top.reviews { border-top: 1px solid #539f89; border-bottom: 1px solid #539f89; background: url(../img/reviews.jpg) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; }   
    .outer-wrapper .science-base p, 
    .outer-wrapper .science-base h1,
