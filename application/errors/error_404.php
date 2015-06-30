@@ -44,7 +44,7 @@
 				<?php $CI->load->view('guests_interface/includes/navigation', $destination);?>
 			</div>
 			<div class="container">
-				<h1>404</h1>
+				<h1><img src="<?=base_url('img/404.jpg')?>" alt=""></h1>
 				<p>Страница не найдена или не существует.<br>Попробуйте начать с <a class="link-404" href="<?=$config['base_url'];?>">главной страницы</a> или воспользуйтесь <a class="link-404" href="<?=$config['base_url'] . 'search-goods';?>">поиском</a>.</p>
 			</div>
 		</div>
