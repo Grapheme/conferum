@@ -72,7 +72,8 @@
 				</div> 
 				<div class="animation_go">Проезд</div>
 			</div>
-		</div>		
+		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>	
 	</div>
 	<script>
 		function preload(arrayOfImages) {
@@ -87,7 +88,6 @@
 		]);	
 	</script>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script src="<?=base_url('js/cabinet/cont-animate.js');?>"></script>
 	<script src="<?=base_url('js/vendor/jquery.fancybox.pack.js')?>"></script>	

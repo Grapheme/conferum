@@ -340,7 +340,11 @@ html, body { margin: 0; padding: 0; font-size: 100%; font-family: "pt-sans", san
 .main-container { padding: 0 38px; }
 p, li { font-size: 14px; font-family: "proxima-nova", sans-serif; }
 ul { margin: 0; }
-.wrapper { margin: 0 auto; overflow: hidden; min-height: 100%; }
+.wrapper { 
+  margin: 0 auto;
+  /*overflow: hidden;*/
+  min-height: 100%; 
+}
 #map-canvas { width: 100%; height: 100%; }
 .upperline { position: relative; height: 9px; background-color: #5464a7; border-bottom: 1px solid #7683b9; margin: 0 0 1.5em; }
 header { position: relative; height: 122px; margin: 0; }
@@ -537,9 +541,9 @@ header { position: relative; height: 122px; margin: 0; }
    Sticky- Footer styles
    ========================================================================== */
   
-	html, body, .main { height: 100%; }
+	html, body, .wrapper { height: 100%; }
 	body > .main { height: auto; /*min-height: 100%;*/ }
-	.main { padding-bottom: 220px; }  /* отступ должен быть равен высоте футера */
+	.main { padding-bottom: 220px; min-height: 100%; }  /* отступ должен быть равен высоте футера */
 	footer { 
 	position: relative;
 	border-top: 1px solid #DCDCDC;

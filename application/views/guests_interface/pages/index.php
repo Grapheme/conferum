@@ -42,6 +42,7 @@
 				<div id="map-canvas"></div>
 			</div>
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 
 	<!--[if lte IE 7]>
@@ -53,7 +54,6 @@
 	<![endif]-->	
 	
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script type="text/javascript" src="<?=base_url('js/vendor/fotorama.js');?>"></script>
 	<script type="text/javascript" src="<?=base_url('js/libs/fotorama-config.js');?>"></script>
