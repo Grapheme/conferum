@@ -1108,7 +1108,9 @@ header { position: relative; height: 122px; margin: 0; }
    .sep_new header h1 { background-image: none; }
    .sep_new header .event-date { margin: .5em 0 .3em; text-align: center; }
    .sep_new p { width: 80%; margin: 0 auto; font-size: .875em; color: #4b4b4b; }
-   .sep_new a { margin: 0 1.2em; font-size: 14px; text-decoration: none; color: #2671a0; }
+   .sep_new a { margin: 0 1.2em; font-size: 14px; text-decoration: none; color: #2671a0; 
+      z-index: 10;
+   }
    .sep_new a:hover { text-decoration: underline; }
    .news-image img { width: 100%; max-width: 100%; }
    .top_publics { position: relative; top: 108px; left: 75px; }
