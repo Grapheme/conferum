@@ -58,9 +58,9 @@
                 </div>
             </noindex>
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/modal/order-a-potion');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script type="text/javascript" src="<?=base_url('js/vendor/scrollingcarousel.2.0.min.js');?>"></script>

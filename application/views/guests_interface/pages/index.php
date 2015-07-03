@@ -20,7 +20,7 @@
 				<?php $this->load->view('guests_interface/includes/small-menu');?>
 				<?php $this->load->view('guests_interface/includes/header');?>
 				<?php $this->load->view('guests_interface/includes/navigation');?>
-				<div class="fotorama_container" style="height: 400px;">
+				<div class="fotorama_container">
 					<!--  <iframe width="924" height="400" src="https://www.youtube.com/embed/L9XyGTDMhIU" frameborder="0" allowfullscreen></iframe> -->
 					<div class="fotorama" data-width="100%" data-nav="false" data-autoplay="6000">
 					<?php for($i=0;$i<count($banners);$i++):?>
@@ -42,6 +42,7 @@
 				<div id="map-canvas"></div>
 			</div>
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 
 	<!--[if lte IE 7]>
@@ -53,7 +54,6 @@
 	<![endif]-->	
 	
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script type="text/javascript" src="<?=base_url('js/vendor/fotorama.js');?>"></script>
 	<script type="text/javascript" src="<?=base_url('js/libs/fotorama-config.js');?>"></script>

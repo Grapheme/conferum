@@ -254,10 +254,10 @@
 			<?php endif;?>
 			
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 	<?php $this->load->view('guests_interface/forms/order-call');?>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script src="<?=base_url('js/vendor/easyResponsiveTabs.js');?>"></script>
 	<script src="<?=base_url('js/cabinet/easytab-config.js');?>"></script>

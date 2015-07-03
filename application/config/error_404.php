@@ -16,7 +16,8 @@
 <body>
 	<a class="raccoon-to-main" href="#"></a>
 	<div class="container">
-		<h1>404</h1>
+		<!--<h1>404</h1>-->
+		<h1><img src="<?=base_url('img/404.jpg')?>" alt=""></h1>
 		<p>Страница не найдена или не существует</p>
 		<a class="back-to-main" href="<?=$config['base_url'];?>">На главную</a>
 	</div>

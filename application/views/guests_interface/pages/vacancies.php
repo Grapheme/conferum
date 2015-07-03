@@ -56,9 +56,9 @@
 				<?php $this->load->view('guests_interface/includes/pagination');?>
 			</div>
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<?php $this->load->view('guests_interface/includes/google-analytics');?>
 </body>

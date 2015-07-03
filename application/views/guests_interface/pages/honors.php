@@ -38,9 +38,9 @@
 				</section>
 			</div>
 		</div>
+		<?php $this->load->view('guests_interface/includes/footer');?>
 	</div>
 	<?php $this->load->view('guests_interface/includes/small-footer');?>
-	<?php $this->load->view('guests_interface/includes/footer');?>
 	<?php $this->load->view('guests_interface/includes/scripts');?>
 	<script src="<?=base_url('js/vendor/jquery.fancybox.pack.js')?>"></script>
 	<script src="<?=base_url('js/cabinet/fancybox-init.js')?>"></script>
