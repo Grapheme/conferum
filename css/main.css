@@ -583,7 +583,7 @@ header { position: relative; height: 122px; margin: 0; }
    .outer-wrapper section.reviews { min-height: 15em; }
    .outer-wrapper section.science-base { min-height: 15.5em; }   
    
-   .yashare-auto-init { float: right; z-index: 9999; position: relative; }
+   .yashare-auto-init { float: right; z-index: 999; position: relative; }
    
    /*section { margin-bottom: 2.8em; }   */
    section header,
