@@ -40,7 +40,7 @@ class MY_Controller extends CI_Controller {
 	
 	/*************************************************************************************************************/
 	
-	public function pagination($url,$uri_segment,$total_rows,$per_page,$get_string = FALSE){
+	public function paginationPages($url,$uri_segment,$total_rows,$per_page,$get_string = FALSE){
 		
 		$this->load->library('pagination');
 		if($get_string):
