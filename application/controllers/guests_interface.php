@@ -337,7 +337,7 @@ class Guests_interface extends MY_Controller{
 	}
 	
 	public function catalog(){
-		
+
 		if($this->uri->segment(3) !== FALSE):
 			show_404();
 		endif;
@@ -369,7 +369,7 @@ class Guests_interface extends MY_Controller{
                 $pagevar['sub_categories'] = $this->categories->getWhere(NULL,array('sub_category'=>1,'parent'=>$category['id']),TRUE);
 				$categoryImg = $this->categories->value($category['id'],'image');
 				$pagevar['products'] = $this->load->view('html/catalog-products',array('page_content'=>$pagevar['page_content'],'products'=>$products,'categoryTitle'=>$category['title'],'categoryDescription'=>$category['description'],'categoryImg'=>$categoryImg),TRUE);
-				$pagevar['pages'] = $this->paginationPages('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),PER_PAGE_DEFAULT);
+				#$pagevar['pages'] = $this->paginationPages('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),PER_PAGE_DEFAULT);
 				$pagevar['category'] = $category;
             else:
                 show_404();
