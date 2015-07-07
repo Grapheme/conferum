@@ -315,7 +315,7 @@ class Ajax_interface extends MY_Controller{
 		$json_request = array('status'=>FALSE,'responseText'=>'','responsePhotoSrc'=>'');
 		$uploadPath = 'download/banners';
 		if(isset($_FILES['file']['name']) && $_FILES['file']['error'] == UPLOAD_ERR_OK):
-			if($this->imageResize($_FILES['file']['tmp_name'],'width',TRUE,899,282)):
+			if($this->imageResize($_FILES['file']['tmp_name'],'width',TRUE,924,290)):
 				$uploadResult = $this->uploadSingleImage(getcwd().'/'.$uploadPath);
 				if($uploadResult['status'] === TRUE && !empty($uploadResult['uploadData'])):
 					if($this->imageResize($_FILES['file']['tmp_name'],'width',TRUE,225,70,TRUE)):
