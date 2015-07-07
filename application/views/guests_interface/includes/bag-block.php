@@ -18,8 +18,8 @@
 		<div class="top-block-phone"><a class="tel-link" href="tel:+78002507744">8 800 <b id="ya-phone-800">250-77-44</b></a></div>
 		<div class="top-block-desc">Бесплатный звонок из любого региона России</div>
 	</div>
-	<div class="top-block-center">
-		<a href="http://www.conferum.ru/press-center/vystavka-interlakokraska-2013" target="_blank">Первое место на выставке &laquo;Интерлакокраска 2013&raquo;</a>
+	<div class="top-block-center" style="line-height: 20px;margin-top: 18px;">
+		<a href="/press-center/kompaniya-konferum-primet-uchastie-v-mejdunarodnoiy-vystavke-interlakokraska-2015" target="_blank">1 место. Лучшая лакокрасочная продукция — 2015<br>Смывка краски с автомобильных дисков</a>
 	</div>
 </div>
 <div class="bag-block">
