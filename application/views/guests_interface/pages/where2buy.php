@@ -30,7 +30,7 @@
 							<h1>Где купить</h1>
 						</div>
 					</header>
-					<!-- Официальное представительство -->
+					<h2>Официальные представительства</h2>
 					<ul class="where2buy-list">
 					<?php for($i=0;$i<count($where2buy);$i++):?>
 						<?php if($where2buy[$i]['number_group'] == 1):?>
@@ -48,7 +48,7 @@
 						<?php endif;?>
 					<?php endfor;?>
 					</ul>
-					<!-- Дилеры -->
+					<h2>Дилеры</h2>
 					<ul class="where2buy-list">
 						<?php for($i=0;$i<count($where2buy);$i++):?>
 							<?php if($where2buy[$i]['number_group'] == 2):?>
