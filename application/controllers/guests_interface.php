@@ -76,7 +76,7 @@ class Guests_interface extends MY_Controller{
 		if($this->input->get('search') !== FALSE && $this->input->get('search') != ''):
 			$this->offset = (int)$this->input->get('offset');
 			$pagevar['products'] = $this->foundProducts($this->input->get('search'));
-			$pagevar['pages'] = $this->paginationPages('search?search='.$this->input->get('search'),3,$this->TotalProducts,$this->offset,TRUE);
+			$pagevar['pages'] = $this->paginationPages('search?search='.$this->input->get('search'),3,$this->TotalProducts,PER_PAGE_DEFAULT,TRUE);
 		endif;
 		$pagevar = $this->getMenu($pagevar);
 		$this->load->view("guests_interface/pages/search-results",$pagevar);
@@ -95,7 +95,7 @@ class Guests_interface extends MY_Controller{
 		if($this->input->get('search') !== FALSE && $this->input->get('search') != ''):
 			$this->offset = (int)$this->input->get('offset');
 			$pagevar['products'] = $this->foundProducts($this->input->get('search'));
-			$pagevar['pages'] = $this->paginationPages('search-goods?search='.$this->input->get('search'),3,$this->TotalProducts,$this->offset,TRUE);
+			$pagevar['pages'] = $this->paginationPages('search-goods?search='.$this->input->get('search'),3,$this->TotalProducts,PER_PAGE_DEFAULT,TRUE);
 		endif;
 		$pagevar = $this->getMenu($pagevar);
 		$this->load->view("guests_interface/pages/search-goods",$pagevar);
@@ -337,7 +337,7 @@ class Guests_interface extends MY_Controller{
 	}
 	
 	public function catalog(){
-		
+
 		if($this->uri->segment(3) !== FALSE):
 			show_404();
 		endif;
@@ -369,8 +369,7 @@ class Guests_interface extends MY_Controller{
                 $pagevar['sub_categories'] = $this->categories->getWhere(NULL,array('sub_category'=>1,'parent'=>$category['id']),TRUE);
 				$categoryImg = $this->categories->value($category['id'],'image');
 				$pagevar['products'] = $this->load->view('html/catalog-products',array('page_content'=>$pagevar['page_content'],'products'=>$products,'categoryTitle'=>$category['title'],'categoryDescription'=>$category['description'],'categoryImg'=>$categoryImg),TRUE);
-				$pagevar['pages'] = $this->paginationPages('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),$this->offset);
-
+				#$pagevar['pages'] = $this->paginationPages('catalog/'.$this->uri->segment(2),4,$this->products->getCountByCategory($category['id']),PER_PAGE_DEFAULT);
 				$pagevar['category'] = $category;
             else:
                 show_404();
@@ -398,6 +397,7 @@ class Guests_interface extends MY_Controller{
 			'product_sizes' => array(),
 			'product_tara' => array(),
 			'similars' => array(),
+			'crumbs' => array(),
 			'allProducts' => $this->products->getFullListProductCategories(),
 			'product_images' => $this->products_resources->getWhere(NULL,array('product'=>$product['id']),TRUE)
 		);
@@ -411,7 +411,18 @@ class Guests_interface extends MY_Controller{
 		$pagevar['product'] = $product;
 //		$pagevar['product']['category'] = $category['id'];
 		$pagevar['product']['category'] = $this->getProductCategoriesIDs($product['id']);
-		$pagevar['product']['sub_categories'] = $this->products->getSubCategoriesTitlesByProductID($pagevar['product']['id']);
+        $pagevar['product']['sub_categories'] = $this->products->getSubCategoriesTitlesByProductID($pagevar['product']['id']);
+        foreach ($pagevar['categories'] as $category):
+            if ($category['id'] == @$pagevar['product']['category'][0]):
+                $pagevar['crumbs'][] = array('url' => 'catalog/' . $category['page_url'],
+                    'title' => $category['title']);
+            endif;
+        endforeach;
+        if ($sub_categories = $this->products->getSubCategoriesTitlesByProductID($pagevar['product']['id'], TRUE)):
+            $pagevar['crumbs'][] = array('url' => 'catalog/' . @$sub_categories[0]['page_url'],
+                'title' => @$sub_categories[0]['title']);
+        endif;
+        $pagevar['crumbs'][] = array('url' => uri_string(), 'title' => $pagevar['product']['title']);
 		for($i=0;$i<count($pagevar['similars']);$i++):
 			$pagevar['similars'][$i]['sizes'] = $this->getProductSizes($pagevar['similars'][$i]['size']);
 		endfor;
