@@ -6,6 +6,11 @@
 		<input type="text" name="link" class="span3 valid-required" value="" placeholder="Ссылка на карте" />
 		<label>Адрес:</label>
 		<textarea rows="5" class="redactor" name="address"></textarea>
+		<label>Группа:</label>
+		<select name="number_group">
+			<option value="1">Официальное представительство</option>
+			<option value="2">Дилеры</option>
+		</select>
 		<label>№ п.п.:</label>
 		<input type="text" name="sort" class="span1 valid-required" value="0"/>
 	</div>
