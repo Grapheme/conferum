@@ -1,4 +1,4 @@
-<?php if(FALSE):?>
+<?php if(1):?>
     <?php if(!empty($crumbs)):?>
     <div>
         <ul>
