@@ -44,6 +44,7 @@
 						</ul>
 					</aside>
 					<div class="cat-item-info">
+						<?php $this->load->view('guests_interface/includes/product-navigation');?>
 						<div>
 							<div class="cat-item-pict">
 								<img src="<?=base_url($product['logo']);?>" alt="">
