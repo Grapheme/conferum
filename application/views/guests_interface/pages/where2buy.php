@@ -30,8 +30,10 @@
 							<h1>Где купить</h1>
 						</div>
 					</header>
+					<!-- Официальное представительство -->
 					<ul class="where2buy-list">
 					<?php for($i=0;$i<count($where2buy);$i++):?>
+						<?php if($where2buy[$i]['number_group'] == 1):?>
 						<li class="where2buy-list-item first-item">
 						<?php if(!empty($where2buy[$i]['link'])):?>
 							<a target="_blank" class="map-mark" href="<?=$where2buy[$i]['link'];?>"></a>
@@ -43,7 +45,26 @@
 								<?=$where2buy[$i]['address'];?>
 							</div>
 						</li>
+						<?php endif;?>
 					<?php endfor;?>
+					</ul>
+					<!-- Дилеры -->
+					<ul class="where2buy-list">
+						<?php for($i=0;$i<count($where2buy);$i++):?>
+							<?php if($where2buy[$i]['number_group'] == 2):?>
+							<li class="where2buy-list-item first-item">
+								<?php if(!empty($where2buy[$i]['link'])):?>
+									<a target="_blank" class="map-mark" href="<?=$where2buy[$i]['link'];?>"></a>
+								<?php endif;?>
+								<div class="where2buy-address">
+									<div class="where2buy-city">
+										<?=$where2buy[$i]['city'];?>
+									</div>
+									<?=$where2buy[$i]['address'];?>
+								</div>
+							</li>
+							<?php endif;?>
+						<?php endfor;?>
 					</ul>
 				</section>
 			</div>
