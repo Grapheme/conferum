@@ -10,6 +10,7 @@
 		<select name="number_group">
 			<option value="1">Официальное представительство</option>
 			<option value="2">Дилеры</option>
+			<option value="3">Дилеры в странах ближнего зарубежья</option>
 		</select>
 		<label>№ п.п.:</label>
 		<input type="text" name="sort" class="span1 valid-required" value="0"/>
