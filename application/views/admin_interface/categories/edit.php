@@ -33,6 +33,5 @@
 	<script type="text/javascript" src="<?=site_url('js/vendor/redactor.min.js');?>"></script>
 	<script type="text/javascript" src="<?=site_url('js/cabinet/redactor-config.js');?>"></script>
 	<script type="text/javascript" src="<?=site_url('js/libs/upload_image.js');?>"></script>
-	<script type="text/javascript" src="<?=site_url('js/cabinet/admin.js');?>"></script>
 </body>
 </html>

@@ -60,6 +60,5 @@
 	<?php $this->load->view("admin_interface/includes/footer");?>
 	<?php $this->load->view("admin_interface/includes/scripts");?>
 
-<script type="text/javascript" src="<?=site_url('js/cabinet/admin.js');?>"></script>
 </body>
 </html>
