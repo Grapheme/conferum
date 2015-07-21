@@ -20,7 +20,7 @@ if(!isset($page_content['page_keywords'])) $page_content['page_keywords'] = '';
 
 <link rel="stylesheet" href="<?=base_url('css/bootstrap.css');?>" />
 <link rel="stylesheet" href="<?=base_url('css/normalize.css');?>" />
-<link rel="shortcut icon" href="<?=base_url('favicon.ico');?>" />
+<link rel="shortcut icon" href="<?=base_url('favicon.ico');?>?1" />
 <link rel="stylesheet" href="<?=base_url('css/fonts.css');?>" />
 <link rel="stylesheet" href="<?=base_url('css/main.css');?>" />
 <link rel="stylesheet" href="<?=base_url('css/discus.css')?>" />
