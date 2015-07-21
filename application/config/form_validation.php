@@ -7,7 +7,6 @@
 		),
 		'category' =>array(
 			array('field'=>'title','label'=>'Название','rules'=>'required|trim|htmlspecialchars'),
-			array('field'=>'description','label'=>'Описание','rules'=>'trim|xss_clean'),
 			array('field'=>'page_url','label'=>'URL','rules'=>'alpha_dash|trim'),
 		),
 		'password' =>array(
@@ -37,7 +36,6 @@
 		'specialist' =>array(
 			array('field'=>'name','label'=>'Имя','rules'=>'required|trim|htmlspecialchars'),
 			array('field'=>'position','label'=>'Должность','rules'=>'trim|xss_clean'),
-			array('field'=>'content','label'=>'Описание','rules'=>'required|xss_clean|trim'),
 		),
 		'volume' =>array(
 			array('field'=>'title','label'=>'Вес, объем','rules'=>'required|trim|xss_clean'),
@@ -46,7 +44,6 @@
 		'reviews' =>array(
 			array('field'=>'name','label'=>'Имя','rules'=>'required|trim|htmlspecialchars'),
 			array('field'=>'city','label'=>'Город','rules'=>'trim|xss_clean'),
-			array('field'=>'content','label'=>'Описание','rules'=>'required|xss_clean|trim'),
 		),
 		'where2buy' =>array(
 			array('field'=>'city','label'=>'Город','rules'=>'required|trim|htmlspecialchars'),
@@ -59,7 +56,6 @@
 			array('field'=>'date','label'=>'Дата публикации','rules'=>'required|trim|htmlspecialchars'),
 			array('field'=>'page_url','label'=>'URL страницы','rules'=>'trim|alpha_dash'),
 			array('field'=>'anonce','label'=>'Анонс','rules'=>'trim|xss_clean'),
-			array('field'=>'content','label'=>'Контент','rules'=>'trim|xss_clean'),
 		),
 		'products' =>array(
 			array('field'=>'page_title','label'=>'Page Title','rules'=>'trim|xss_clean'),
@@ -78,9 +74,9 @@
 			array('field'=>'title','label'=>'Название','rules'=>'required|trim|htmlspecialchars'),
 			array('field'=>'salary','label'=>'Оплата','rules'=>'trim|htmlspecialchars'),
 			array('field'=>'page_url','label'=>'URL страницы','rules'=>'trim|alpha_dash'),
-			array('field'=>'сonditions','label'=>'Условия','rules'=>'trim|xss_clean'),
-			array('field'=>'responsibility','label'=>'Обязанности','rules'=>'trim|xss_clean'),
-			array('field'=>'requirements','label'=>'Требования','rules'=>'trim|xss_clean'),
+			array('field'=>'сonditions','label'=>'Условия','rules'=>'trim'),
+			array('field'=>'responsibility','label'=>'Обязанности','rules'=>'trim'),
+			array('field'=>'requirements','label'=>'Требования','rules'=>'trim'),
 		),
 		'contacts' =>array(
 			array('field'=>'address','label'=>'Адрес','rules'=>'xss_clean|trim'),

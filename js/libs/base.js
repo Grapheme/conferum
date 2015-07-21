@@ -173,6 +173,9 @@ mt.ajaxBeforeSubmit = function(formData,jqForm,options){
 	}else{
 		return true;
 	}
+	var redactor = $("textarea.redactor");
+	console.log(redactor);
+	//$(redactor).html(this.get());
 }
 mt.ajaxSuccessSubmit = function(responseText,statusText,xhr,jqForm){
 	$("button.btn-loading").removeClass('loading');
@@ -247,14 +250,14 @@ $.fn.formSubmitInServer = function(){
 					$("div.div-form-operation").after('<div class="msg-alert">'+response.responseText+'</div>');
 				}
 				if(response.redirect != false){
-					mt.redirect(response.redirect);
+					//mt.redirect(response.redirect);
 				}
 			}else{
 				$("div.div-form-operation").after('<div class="msg-alert error">'+response.responseText+'</div>');
 			}
 		}
 	}
-	setTimeout(function(){$(_form).ajaxSubmit(options);},500);
+	setTimeout(function(){$(_form).ajaxSubmit(options);},1000);
 }
 $.fn.ForceBlurEmptyValue = function(){
 	return this.each(function(i,element){
