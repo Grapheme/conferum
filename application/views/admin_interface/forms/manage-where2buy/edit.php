@@ -10,6 +10,7 @@
 		<select name="number_group">
 			<option value="1"<?= $where2buy['number_group'] == 1 ? ' selected':'' ?>>Официальное представительство</option>
 			<option value="2"<?= $where2buy['number_group'] == 2 ? ' selected':'' ?>>Дилеры</option>
+			<option value="3"<?= $where2buy['number_group'] == 3 ? ' selected':'' ?>>Дилеры в странах ближнего зарубежья</option>
 		</select>
 		<label>№ п.п.:</label>
 		<input type="text" name="sort" class="span1 valid-required" value="<?=$where2buy['sort']?>"/>
