@@ -250,7 +250,7 @@ $.fn.formSubmitInServer = function(){
 					$("div.div-form-operation").after('<div class="msg-alert">'+response.responseText+'</div>');
 				}
 				if(response.redirect != false){
-					//mt.redirect(response.redirect);
+					mt.redirect(response.redirect);
 				}
 			}else{
 				$("div.div-form-operation").after('<div class="msg-alert error">'+response.responseText+'</div>');
