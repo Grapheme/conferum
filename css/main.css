@@ -1821,3 +1821,33 @@ header { position: relative; height: 122px; margin: 0; }
 .resp-tabs-list .resp-tab-active {
   color: #404c8e;
 }
+
+.breadcrumbs > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs > ul > li:last-of-type:after {
+  content: '';
+}
+
+.breadcrumbs > ul > li:after {
+  content: '>';
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.breadcrumbs > ul > li a:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs > ul > li a{ 
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumbs > ul > li {
+  display: inline-block;
+  margin-left: 5px;
+}
