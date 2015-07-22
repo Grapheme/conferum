@@ -15,7 +15,7 @@
 		</ul>
 		<div class="contact-addresses">
 			<address>г. Балашиха, Щелковское шоссе 54-Б</address>
-			<address><a href="tel:+74955029290">+7 (495) 502-92-90</a></address>
+			<address><a href="tel:+74951234765">+7 (495) 1234-765</a></address>
 			<address><a href="tel:+74952276263">+7 (495) 227-62-63</a></address>
 			<address><a href="tel:+78002507744">+7 (800) 250-77-44</a></address>
 			<address><a href="tel:+79169988616">+7 (916) 99-88-616</a></address>

@@ -11,7 +11,7 @@
 ?>
 <div class="top-block">
 	<div class="top-block-left">
-		<div class="top-block-phone"><a class="tel-link" href="tel:+74955029290">+7 (495) <b id="ya-phone">502-92-90</b></a></div>
+		<div class="top-block-phone"><a class="tel-link" href="tel:+74951234765">+7 (495) <b id="ya-phone">1234-765</b></a></div>
 		<div class="top-block-desc">Звоните в будние дни с 9 до 18 часов</div>
 	</div>
 	<div class="top-block-right">
