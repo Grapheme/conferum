@@ -1329,6 +1329,8 @@ class Ajax_interface extends MY_Controller{
 		$uploadPath = 'download/products';
 		if(isset($_FILES['file']['name']) && $_FILES['file']['error'] == UPLOAD_ERR_OK):
 			if($this->imageResize($_FILES['file']['tmp_name'])):
+				$this->watermark($_FILES['file']['tmp_name'], getcwd().'/img/watermark/main.png');
+
 				$uploadResult = $this->uploadSingleImage(getcwd().'/'.$uploadPath);
 				if($uploadResult['status'] === TRUE && !empty($uploadResult['uploadData'])):
 					if($this->imageResize($_FILES['file']['tmp_name'],NULL,TRUE,256,256,TRUE)):

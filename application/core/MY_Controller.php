@@ -215,7 +215,27 @@ class MY_Controller extends CI_Controller {
 		endif;
 		
 	}
-	
+
+	public function watermark($filePath, $source_image = NULL){
+
+		if(!is_null($source_image)):
+			$config = array();
+			$this->load->library('image_lib');
+			$config['source_image']	= $filePath;
+			$config['wm_type'] = 'overlay';
+			$config['wm_overlay_path'] = $source_image;
+			$config['wm_vrt_alignment'] = 'middle';
+			$config['wm_hor_alignment'] = 'center';
+			$config['wm_padding'] = '0';
+			$config['wm_font_size'] = '40';
+			$this->image_lib->initialize($config);
+			$this->image_lib->watermark();
+			$this->image_lib->clear();
+			return TRUE;
+		endif;
+		return FALSE;
+	}
+
 	public function CropToSquare(){
 		
 		$arguments = &func_get_args();
@@ -756,4 +776,3 @@ class MY_Controller extends CI_Controller {
 	}
 	
 }
-?>
